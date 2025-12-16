@@ -1,0 +1,19 @@
+{
+  "dependencies": {
+    "bootstrap": "^5.3.8",
+    "bootstrap-icons": "^1.13.1"
+  },
+  "devDependencies": {
+    "sass": "^1.95.0"
+  },
+  "scripts": {
+    "sass": "sass assets/scss/all.scss assets/css/all.css --watch"
+  },
+  "name": "ichiban-kuji",
+  "version": "1.0.0",
+  "main": "index.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "https://github.com/lianne928/ichiban-kuji.git"
+}

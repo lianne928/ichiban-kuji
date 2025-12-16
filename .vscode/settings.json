@@ -1,0 +1,5 @@
+{
+    "editor.tabCompletion": "on",
+    "javascript.suggest.completeFunctionCalls": true,
+    "emmet.triggerExpansionOnTab": true
+}

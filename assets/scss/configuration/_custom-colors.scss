@@ -1,0 +1,65 @@
+$primary-dark: #003BB7;
+$primary: #0068FF;
+$primary-80: #3F95FF;
+$primary-60: #66B1FF;
+$primary-40: #99CFFF;
+$primary-10: #E5F4FF;
+
+$success-dark: #48970F;
+$success: #7CD31F;
+$success-20: #DDFAA5;
+$success-10: #F0FCD1;
+
+$info-dark: #1566B5;
+$info: #2AAFFC;
+$info-20: #A9EFFE;
+$info-10: #D4F9FE;
+
+$danger-dark: #B71D4F;
+$danger: #FF3A55;
+$danger-20: #FFBBB0;
+$danger-10: #FFE0D7;
+
+$neutral-80: #4B4B4B;
+$neutral-60: #909090;
+$neutral-40: #ECECEC;
+$neutral-20: #F9F9F9;
+
+
+// scss-docs-start theme-colors-map
+$custom-colors: (
+  "primary-dark": $primary-dark,
+  "primary": $primary,
+  "primary-80": $primary-80,
+  "primary-40": $primary-40,
+  "primary-10": $primary-10,
+
+  "secondary": $secondary,
+
+  "success-dark": $success-dark,
+  "success": $success,
+  "success-20": $success-20,
+  "success-10": $success-10,
+
+  "info-dark": $info-dark,
+  "info": $info,
+  "info-20": $info-20,
+  "info-10": $info-10,
+
+  "warning":    $warning,
+
+  "danger-dark": $danger-dark,
+  "danger":     $danger,
+  "danger-20": $danger-20,
+  "danger-10": $danger-10,
+
+  "light":      $light,
+  "dark":       $dark,
+
+  "neutral-80": $neutral-80,
+  "neutral-60": $neutral-60,
+  "neutral-40": $neutral-40,
+  "neutral-20": $neutral-20,
+) !default;
+
+$theme-colors: map-merge($theme-colors, $custom-colors);
