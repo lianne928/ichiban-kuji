@@ -4,7 +4,7 @@
     "bootstrap-icons": "^1.13.1"
   },
   "devDependencies": {
-    "sass": "^1.95.0"
+    "sass": "^1.97.0"
   },
   "scripts": {
     "sass": "sass assets/scss/all.scss assets/css/all.css --watch"

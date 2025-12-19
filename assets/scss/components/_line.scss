@@ -1,0 +1,14 @@
+.dot{
+    border: 1px dashed black;
+}
+
+.bg-line{
+    background-image: 
+    repeating-linear-gradient(
+        to right, 
+        transparent  0 80px, 
+        #ff77e285 -2px 81px
+    )
+    
+}
+

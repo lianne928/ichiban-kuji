@@ -1,5 +1,5 @@
 @charset "UTF-8";
-@import url("https://fonts.googleapis.com/css2?family=BBH+Hegarty&family=Mochiy+Pop+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=BBH+Hegarty&family=Dela+Gothic+One&family=Mochiy+Pop+One&display=swap");
 /*!
  * Bootstrap  v5.3.8 (https://getbootstrap.com/)
  * Copyright 2011-2025 The Bootstrap Authors
@@ -10388,12 +10388,6 @@ textarea.form-control-lg {
   .border-sm-0 {
     border: 0 !important;
   }
-  .border-top-sm {
-    border-top: var(--bs-border-width) var(--bs-border-style) var(--bs-border-color) !important;
-  }
-  .border-top-sm-0 {
-    border-top: 0 !important;
-  }
   .border-start-sm {
     border-left: var(--bs-border-width) var(--bs-border-style) var(--bs-border-color) !important;
   }
@@ -10955,12 +10949,6 @@ textarea.form-control-lg {
   }
   .border-md-0 {
     border: 0 !important;
-  }
-  .border-top-md {
-    border-top: var(--bs-border-width) var(--bs-border-style) var(--bs-border-color) !important;
-  }
-  .border-top-md-0 {
-    border-top: 0 !important;
   }
   .border-start-md {
     border-left: var(--bs-border-width) var(--bs-border-style) var(--bs-border-color) !important;
@@ -11524,12 +11512,6 @@ textarea.form-control-lg {
   .border-lg-0 {
     border: 0 !important;
   }
-  .border-top-lg {
-    border-top: var(--bs-border-width) var(--bs-border-style) var(--bs-border-color) !important;
-  }
-  .border-top-lg-0 {
-    border-top: 0 !important;
-  }
   .border-start-lg {
     border-left: var(--bs-border-width) var(--bs-border-style) var(--bs-border-color) !important;
   }
@@ -12091,12 +12073,6 @@ textarea.form-control-lg {
   }
   .border-xl-0 {
     border: 0 !important;
-  }
-  .border-top-xl {
-    border-top: var(--bs-border-width) var(--bs-border-style) var(--bs-border-color) !important;
-  }
-  .border-top-xl-0 {
-    border-top: 0 !important;
   }
   .border-start-xl {
     border-left: var(--bs-border-width) var(--bs-border-style) var(--bs-border-color) !important;
@@ -12660,12 +12636,6 @@ textarea.form-control-lg {
   .border-xxl-0 {
     border: 0 !important;
   }
-  .border-top-xxl {
-    border-top: var(--bs-border-width) var(--bs-border-style) var(--bs-border-color) !important;
-  }
-  .border-top-xxl-0 {
-    border-top: 0 !important;
-  }
   .border-start-xxl {
     border-left: var(--bs-border-width) var(--bs-border-style) var(--bs-border-color) !important;
   }
@@ -13225,6 +13195,66 @@ textarea.form-control-lg {
   font-style: normal;
 }
 
-.logoImage {
-  width: 120px;
+.dela-gothic-one-regular {
+  font-family: "Dela Gothic One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
+
+.logoRotate {
+  transform: rotateX(45deg);
+}
+
+.logoShadow {
+  text-shadow: -3px 1px 1px rgb(250, 34, 229), -2px 4px 1px rgb(56, 48, 210), -3px -3px 1px gray, -2px -4px 1px gray, 3px 4px 1px gray, 4px 5px 1px rgb(13, 255, 41), 6px 5px 2px rgb(13, 255, 41);
+}
+
+.dot {
+  border: 1px dashed black;
+}
+
+.bg-line {
+  background-image: repeating-linear-gradient(to right, transparent 0 80px, rgba(255, 119, 226, 0.5215686275) -2px 81px);
+}
+
+.auth-right {
+  transform: translateX(16px);
+}
+
+header button[class*=outline]:hover {
+  background-color: rgb(241, 28, 241);
+}
+
+.text-xs {
+  font-size: 12px;
+}
+
+.track {
+  animation: scroll 18s linear infinite;
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+.track:hover {
+  animation-play-state: paused;
+}
+
+.card-shadow {
+  box-shadow: 2px 2px gray;
+}
+
+.card-bg-line {
+  background-image: repeating-linear-gradient(to right, transparent 27px 90px, rgba(254, 6, 167, 0.2) -3px 91px), repeating-linear-gradient(to top, transparent 39px 90px, rgba(254, 6, 167, 0.2) 0px 91px);
+}
+
+.mainbanner-shadow {
+  box-shadow: 2px 2px rgb(34, 34, 34);
+}
+
+/*# sourceMappingURL=all.css.map */

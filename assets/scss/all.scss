@@ -1,5 +1,5 @@
 // font
-@import url('https://fonts.googleapis.com/css2?family=BBH+Hegarty&family=Mochiy+Pop+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=BBH+Hegarty&family=Dela+Gothic+One&family=Mochiy+Pop+One&display=swap');
 
 // bootstrap
 @import "../../node_modules/bootstrap/scss/functions";
@@ -54,4 +54,11 @@ $utilities: map-merge(
 // 元件
 @import "./components/font-family";
 @import "./components/logo";
+@import "./components/line";
+@import "./components/auth-stack";
+@import "./components/text-size";
+@import "./components/loop";
+@import "./components/card";
+
+@import "./page/index";
 

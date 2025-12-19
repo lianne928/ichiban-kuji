@@ -1,0 +1,18 @@
+.card-shadow{
+    box-shadow: 2px 2px gray;
+}
+
+.card-bg-line{
+background-image: 
+    repeating-linear-gradient(
+        to right, 
+        transparent 27px 90px, 
+        rgba(254, 6, 167, 0.2) -3px 91px
+    ), 
+        
+    repeating-linear-gradient(
+        to top, 
+        transparent 39px 90px, 
+        rgba(254, 6, 167, 0.2) 0px 91px
+    )
+}

@@ -1,3 +1,12 @@
-.logoImage{
-    width: 120px;
+.logoRotate{
+    transform: rotateX(45deg);
 }
+
+.logoShadow{
+   text-shadow:
+    -3px 1px 1px rgb(250, 34, 229), 
+    -2px 4px 1px rgb(56, 48, 210), 
+    -3px -3px 1px gray, -2px -4px 1px gray, 3px 4px 1px gray, 
+    4px 5px 1px rgb(13, 255, 41), 6px 5px 2px rgb(13, 255, 41);
+}
+
