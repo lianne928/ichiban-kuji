@@ -50,6 +50,7 @@ $utilities: map-merge(
 @import "../../node_modules/bootstrap/scss/mixins";
 @import "../../node_modules/bootstrap/scss/bootstrap";
 
+@import "./page/index";
 
 // 元件
 @import "./components/font-family";
@@ -59,6 +60,6 @@ $utilities: map-merge(
 @import "./components/text-size";
 @import "./components/loop";
 @import "./components/card";
+@import "./components/transform";
 
-@import "./page/index";
 

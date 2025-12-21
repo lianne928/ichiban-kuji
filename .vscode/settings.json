@@ -1,5 +1,6 @@
 {
     "editor.tabCompletion": "on",
     "javascript.suggest.completeFunctionCalls": true,
-    "emmet.triggerExpansionOnTab": true
+    "emmet.triggerExpansionOnTab": true,
+    "liveServer.settings.multiRootWorkspaceName": "ichiban-kuji"
 }

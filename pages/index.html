@@ -9,6 +9,10 @@
       href="../assets/image/logo.png"
       type="image/x-icon"
     />
+    <link
+      rel="stylesheet"
+      href="../node_modules/bootstrap-icons/font/bootstrap-icons.css"
+    />
     <link rel="stylesheet" href="../assets/css/all.css" />
   </head>
   <body>
@@ -18,65 +22,74 @@
         <div class="d-flex justify-content-between align-items-center">
           <div>
             <h2
-              class="dela-gothic-one-regular display-1 text-center text-light logoRotate logoShadow"
+              class="dela-gothic-one-regular display-1 text-center text-white logoRotate logoShadow"
             >
               一番くじ
             </h2>
           </div>
-          <div class="d-flex">
-            <button
-              type="button"
-              class="btn btn-dark rounded-circle px-5 auth-right"
+          <!-- Nav -->
+          <nav class="ms-auto">
+            <ul
+              class="list-unstyled d-flex align-items-center gap-3 mb-0 justify-content-center"
             >
-              註冊
-            </button>
-            <button
-              type="button"
-              class="btn btn-outline-dark dot rounded-circle px-5"
-            >
-              登入
-            </button>
+              <li class="transformskew-xs">
+                <a href="event_list.html" class="nav-link-custom text-dark">
+                  (<span class="text-decoration-underline"> 抽賞須知 </span>)
+                </a>
+              </li>
+              <li class="transformskew-xs">
+                <a href="event_list.html" class="nav-link-custom text-dark">
+                  (
+                  <span class="text-decoration-underline">
+                    一番くじ 精選企劃一覽 </span
+                  >)
+                </a>
+              </li>
+            </ul>
+          </nav>
+
+          <!-- Auth buttons -->
+          <div>
+            <div class="d-flex gap-2">
+              <button
+                type="button"
+                class="btn btn-dark rounded-circle px-5 auth-right"
+              >
+                註冊
+              </button>
+              <button
+                type="button"
+                class="btn btn-outline-dark dot rounded-circle px-5"
+              >
+                登入
+              </button>
+            </div>
           </div>
         </div>
       </div>
     </header>
 
     <!-- marquee start -->
-    <div class="border-bottom border-dark text-nowrap overflow-hidden">
+    <div
+      class="border-bottom border-dark text-nowrap overflow-hidden bg-primary text-light"
+    >
       <div class="track py-2 w-100 d-flex gap-3">
-        <span>🔥 開抽中 🔥</span>
         <span>🎯 限定商品 熱烈販售 🎯</span>
         <span
-          ><a href="./event_detail.html" class="text-decoration-none text-dark"
+          ><a href="./event_detail.html" class="text-decoration-none text-light"
             >⭐ 湯姆貓與傑利鼠 60 cm 巨大保齡球湯姆貓 Last 賞 等你帶回家 ⭐</a
           ></span
         >
         <span>⏰ 滿十抽運費老闆包名額有限 額滿為止 ⏰</span>
+        <span>🔥 NEW ARRIVAL: 湯姆貓與傑利鼠 FUNNY ART! 5</span>
+        <span>⚡ 最後賞倒數中: 七龍珠 EX 恐怖的基紐特戰隊</span>
+        <span>💖 補貨通知: 庫洛魔法使 25週年紀念</span>
+        <span>🔥 NEW ARRIVAL: 湯姆貓與傑利鼠 FUNNY ART! 5</span>
+        <span>⚡ 最後賞倒數中: 七龍珠 EX 恐怖的基紐特戰隊</span>
+        <span>💖 補貨通知: 庫洛魔法使 25週年紀念</span>
       </div>
     </div>
     <!-- marquee end -->
-
-    <!-- heard start -->
-    <!-- nav start-->
-
-    <!-- <nav class="bg-primary border-bottom border-top border-1 border-dark mb-3">
-      <div class="container">
-        <ul
-          class="list-unstyled mx-auto d-flex justify-content-center gap-3 py-2 mb-0"
-        >
-          <li>
-            <a href="#" class="text-decoration-none text-dark p-2">最新消息</a>
-          </li>
-          <li>
-            <a href="#" class="text-decoration-none text-dark p-2">常見問題</a>
-          </li>
-          <li>
-            <a href="#" class="text-decoration-none text-dark p-2">聯絡我們</a>
-          </li>
-        </ul>
-      </div>
-    </nav> -->
-    <!-- nav end -->
 
     <!-- main start -->
     <main class="border-bottom border-dark mt-3">
@@ -84,20 +97,26 @@
         <div class="row row-cols-1 row-cols-lg-2 gy-3">
           <div class="col col-lg-8">
             <div class="sliderMainImg h-100">
-              <img
-                id="mainImg"
-                src="../assets/image/eventPuppet.jpg"
-                alt=""
-                class="img-fluid w-100 rounded-4 border border-2 border-dark mainbanner-shadow"
-                style="max-height: 560px"
-              />
-              <h2 id="mainTittle" class="fw-bold pt-4">
-                PUPPET SUNSUN 帕比順順
-              </h2>
-              <small id="mainDesc" class="fw-light"
-                >如果你正在找一個「陪你生活」的角色，那首選就是PUPPET
-                SUNSUN!</small
+              <a
+                href="https://yokoku.pass-the-baton.com/"
+                id="mainHref"
+                class="text-decoration-none text-dark"
               >
+                <img
+                  id="mainImg"
+                  src="../assets/image/eventPuppet.jpg"
+                  alt=""
+                  class="img-fluid w-100 rounded-4 border border-2 border-dark mainbanner-shadow card-transformY"
+                  style="max-height: 560px"
+                />
+                <h2 id="mainTittle" class="fw-bold pt-4">
+                  PUPPET SUNSUN 帕比順順
+                </h2>
+                <small id="mainDesc" class="fw-light"
+                  >如果你正在找一個「陪你生活」的角色，那首選就是PUPPET
+                  SUNSUN!</small
+                ><br />
+              </a>
             </div>
           </div>
           <!-- 側邊欄 -->
@@ -105,13 +124,21 @@
             <div
               class="rounded-4 border border-2 border-dark h-100 p-4 mainbanner-shadow"
             >
-              <div class="asideTittle">
-                <p>大家都在玩</p>
+              <div class="asideTittle d-flex align-items-center pb-3">
+                <h4
+                  class="dela-gothic-one-regular d-inline-block text-nowrap pe-2 mb-0 text-dark"
+                >
+                  大家都在玩
+                </h4>
+                <div class="border border-top w-100"></div>
               </div>
               <div class="asideContent">
                 <ul class="list-unstyled">
-                  <li id="eventPuppetsunsun">
-                    <a href="#" class="row text-dark">
+                  <li id="eventPuppetsunsun" class="card-transformY">
+                    <a
+                      href="https://yokoku.pass-the-baton.com/"
+                      class="row text-dark"
+                    >
                       <div class="col">
                         <img
                           src="../assets/image/eventPuppet.jpg"
@@ -207,18 +234,34 @@
     <!-- article start -->
     <!-- 加入線條 -->
     <article class="border-1 border-bottom border-dark bg-line">
-      <div class="container pt-3 py-5">
+      <div class="container py-5 position-relative">
         <div class="row">
           <div class="col col-md-7">
-            <small class="fw-light fs-6 text-uppercase">special pick up!</small>
-            <h2 class="fw-bold my-2">𝘅 BANPRESTO × 一番賞 EXPO 2025</h2>
-            <p>
-              集結熱門動畫、遊戲與角色周邊的一番賞展覽，現場展示多款限量公仔、
-              布偶與生活雜貨，讓收藏家與入門玩家都能一次體驗抽賞的樂趣。
+            <small class="text-uppercase text-secondary fw-bold"
+              >💖 WELCOME TO 一番くじ</small
+            ><br />
+            <h2 class="fw-bold my-2 d-inline-block">𝘅 VIRTUAL KUJI STATION</h2>
+            <span class="bg-secondary pe-4 text-light ms-1"
+              >連結你的幸運訊號</span
+            ><br />
+            <p class="fw-light bg-dark text-light d-inline-block">登入完成！</p>
+            <br />
+            <p class="fw-light bg-dark text-light d-inline-block">
+              不需要投幣，也不用跑到秋葉原，只要動動手指，
             </p>
-            <p>
-              透過線上預約與現場合作店舖同步進行，從排隊、抽賞到兌換獎品，
-              以更直覺的動線與透明資訊呈現，打造更舒服的一番賞體驗。
+            <br />
+            <p class="fw-light bg-dark text-light d-inline-block">
+              就能體驗最純正的日系一番賞樂趣。
+            </p>
+            <br />
+            <p class="fw-light bg-dark text-light d-inline-block">
+              準備好接收你的專屬驚喜了嗎？
+            </p>
+            <br />
+            <p
+              class="bbh-hegarty-regular text-primary opacity-75 display-1 border rounded-circle d-inline-block py-2 px-4 position-absolute top-50 end-0 rotate"
+            >
+              Start Game!
             </p>
           </div>
         </div>
@@ -226,104 +269,168 @@
     </article>
     <!-- article end -->
     <!-- product list start -->
-    <section>
+    <section class="bg-gray">
       <div class="container">
-        <div class="row gx-0">
+        <div class="row gx-0 h-100">
           <aside
-            class="col col-lg-2 border-end border-dark pe-4 d-none d-lg-block"
+            class="col-lg-2 d-none d-lg-block border-end border-start border-dark"
           >
-            <div class="mt-4">
-              <ul
-                class="border border-dark rounded-4 h-100 p-4 list-unstyled text-center"
-              >
-                <li class="border-bottom border-dark">
-                  <a
-                    href="#"
-                    class="text-decoration-none py-3 w-100 d-inline-block text-dark"
-                    >熱門 IP</a
+            <div class="sticky-top pb-5 pt-4">
+              <div class="px-4 pt-4">
+                <div class="title text-center mb-2">
+                  <h5
+                    class="mb-0 text-uppercase bbh-hegarty-regular bg-dark text-light text-center rounded-circle"
                   >
-                </li>
-                <li class="border-bottom border-dark">
-                  <a
-                    href="#"
-                    class="text-decoration-none py-3 w-100 d-inline-block text-dark"
-                    >年終酬賓大回饋</a
+                    <small class="text-light">\</small>
+                    status
+                    <small class="text-light">/</small>
+                  </h5>
+                  <small class="text-center d-inline-block">抽選狀態</small>
+                </div>
+
+                <ul
+                  class="border border-dark rounded-3 bg-light list-unstyled text-center mb-4"
+                >
+                  <li class="border-bottom border-dark position-relative">
+                    <a
+                      href="#"
+                      class="d-block py-3 text-dark text-decoration-none"
+                    >
+                      限定賞在庫
+                      <span
+                        class="text-xs bbh-hegarty-regular position-absolute translate-middle badge rounded-circle text-primary"
+                        style="top: 35%; right: 2%"
+                        >10</span
+                      ></a
+                    >
+                  </li>
+                  <li class="border-bottom border-dark position-relative">
+                    <a
+                      href="#"
+                      class="d-block py-3 text-dark text-decoration-none"
+                    >
+                      最後賞倒數
+                      <span
+                        class="text-xs bbh-hegarty-regular position-absolute translate-middle badge rounded-circle text-primary"
+                        style="top: 35%; right: 1%"
+                        >10</span
+                      ></a
+                    >
+                  </li>
+                  <li class="border-bottom border-dark position-relative">
+                    <a
+                      href="#"
+                      class="d-block py-3 text-dark text-decoration-none"
+                      >SP 賞在庫
+                      <span
+                        class="text-xs bbh-hegarty-regular position-absolute translate-middle badge rounded-circle text-primary"
+                        style="top: 35%; right: 11%"
+                        >8</span
+                      ></a
+                    >
+                  </li>
+                  <li class="position-relative bg-dark rounded-bottom-2">
+                    <a
+                      href="#"
+                      class="d-block py-3 text-light text-decoration-none"
+                    >
+                      查看全部
+                      <span
+                        class="text-xs bbh-hegarty-regular position-absolute translate-middle badge rounded-circle text-light"
+                        style="top: 35%; right: 6%"
+                        >28</span
+                      ></a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <div class="px-4">
+                <div class="title text-center mb-2">
+                  <h5
+                    class="mb-0 text-uppercase bbh-hegarty-regular bg-dark text-light text-center rounded-circle"
                   >
-                </li>
-                <li class="border-bottom border-dark">
-                  <a
-                    href="#"
-                    class="text-decoration-none py-3 w-100 d-inline-block text-dark"
-                    >熱門 IP</a
-                  >
-                </li>
-                <li class="border-bottom border-dark">
-                  <a
-                    href="#"
-                    class="text-decoration-none py-3 w-100 d-inline-block text-dark"
-                    >熱門 IP</a
-                  >
-                </li>
-                <li class="border-bottom border-dark">
-                  <a
-                    href="#"
-                    class="text-decoration-none py-3 w-100 d-inline-block text-dark"
-                    >熱門 IP</a
-                  >
-                </li>
-              </ul>
-            </div>
-            <div class="mt-4">
-              <ul
-                class="border border-dark rounded-4 h-100 p-4 list-unstyled text-center"
-              >
-                <li class="border-bottom border-dark">
-                  <a
-                    href="#"
-                    class="text-decoration-none py-3 w-100 d-inline-block text-dark"
-                    >熱門 IP</a
-                  >
-                </li>
-                <li class="border-bottom border-dark">
-                  <a
-                    href="#"
-                    class="text-decoration-none py-3 w-100 d-inline-block text-dark"
-                    >年終酬賓大回饋</a
-                  >
-                </li>
-                <li class="border-bottom border-dark">
-                  <a
-                    href="#"
-                    class="text-decoration-none py-3 w-100 d-inline-block text-dark"
-                    >熱門 IP</a
-                  >
-                </li>
-                <li class="border-bottom border-dark">
-                  <a
-                    href="#"
-                    class="text-decoration-none py-3 w-100 d-inline-block text-dark"
-                    >熱門 IP</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="#"
-                    class="text-decoration-none py-3 w-100 d-inline-block text-dark"
-                    >熱門 IP</a
-                  >
-                </li>
-              </ul>
+                    <small class="text-light">\</small>
+                    sale
+                    <small class="text-light">/</small>
+                  </h5>
+                  <small class="text-center d-inline-block">活動開催</small>
+                </div>
+                <ul
+                  class="border border-dark rounded-3 bg-light list-unstyled text-center mb-4"
+                >
+                  <li class="border-bottom border-dark position-relative">
+                    <a
+                      href="#"
+                      class="d-block py-3 text-dark text-decoration-none"
+                    >
+                      新品登場
+                      <span
+                        class="text-xs bbh-hegarty-regular position-absolute translate-middle badge rounded-circle text-primary"
+                        style="top: 35%; right: 6%"
+                        >10</span
+                      ></a
+                    >
+                  </li>
+                  <li class="border-bottom border-dark position-relative">
+                    <a
+                      href="#"
+                      class="d-block py-3 text-dark text-decoration-none"
+                      >好評再返場
+                      <span
+                        class="text-xs bbh-hegarty-regular position-absolute translate-middle badge rounded-circle text-primary"
+                        style="top: 35%; right: 8%"
+                        >8</span
+                      ></a
+                    >
+                  </li>
+                  <li class="border-bottom border-dark position-relative">
+                    <a
+                      href="#"
+                      class="d-block py-3 text-dark text-decoration-none"
+                    >
+                      新鮮開套
+                      <span
+                        class="text-xs bbh-hegarty-regular position-absolute translate-middle badge rounded-circle text-primary"
+                        style="top: 35%; right: 6%"
+                        >10</span
+                      ></a
+                    >
+                  </li>
+                  <li class="position-relative bg-dark rounded-bottom-2">
+                    <a
+                      href="#"
+                      class="d-block py-3 text-light text-decoration-none"
+                    >
+                      查看全部
+                      <span
+                        class="text-xs bbh-hegarty-regular position-absolute translate-middle badge rounded-circle text-light"
+                        style="top: 35%; right: 6%"
+                        >28</span
+                      ></a
+                    >
+                  </li>
+                </ul>
+              </div>
             </div>
           </aside>
-          <div class="col col-lg-10 my-4">
-            <div class="ps-3 pb-3">
-              <div
-                class="row row-cols-1 row-cols-md-2 row-cols-lg-4 ps--lg-3 me-0 gy-4"
-              >
+
+          <div class="col col-lg-10 py-4 h-100">
+            <div class="d-grid mx-auto ps-3 pb-3">
+              <div class="mb-2">
+                <h3
+                  class="mochiy-pop-one-regular text-dark border rounded-circle d-inline-block"
+                >
+                  新鮮開套
+                </h3>
+                <h4 class="bbh-hegarty-regular d-inline-block text-primary">
+                  New Arrival
+                </h4>
+              </div>
+              <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 me-0 gy-4">
                 <!-- productCard items start -->
                 <div class="col">
                   <div
-                    class="card rounded-4 border-dark h-100 card-bg-line card-shadow"
+                    class="card rounded-4 border-dark h-100 card-bg-line card-shadow card-transformY"
                   >
                     <div class="p-3 h-100">
                       <div class="d-flex flex-column h-100">
@@ -333,11 +440,12 @@
                           alt="..."
                         />
                         <div class="card-body">
-                          <p
+                          <span
                             class="badge border border-dark fw-light text-dark mb-0 bg-light"
                           >
                             新品登場
-                          </p>
+                          </span>
+
                           <br />
                           <small class="card-title fw-light bg-light"
                             >( Happyくじ ) 快樂賞</small
@@ -375,18 +483,28 @@
                               >
                             </span>
                           </div>
-                          <a
-                            href="#"
-                            class="btn btn-primary d-inline-block w-100 border border-1 border-dark mt-auto"
-                            >馬上抽</a
-                          >
+                          <div class="position-relative">
+                            <a
+                              href="./event_detail.html"
+                              class="btn btn-primary d-inline-block w-100 border border-1 border-dark text-white fw-bold mt-auto card-btn"
+                              ><p class="mb-0">
+                                馬上抽<span
+                                  class="bbh-hegarty-regular badge bg-dark rounded-circle position-absolute top-0 start-100 translate-middle border border-1 py-2"
+                                >
+                                  10% <br />off
+                                </span>
+                              </p></a
+                            >
+                          </div>
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
                 <div class="col">
-                  <div class="card rounded-4 border-dark h-100">
+                  <div
+                    class="card rounded-4 border-dark h-100 card-bg-line card-shadow card-transformY"
+                  >
                     <div class="p-3 h-100">
                       <div class="d-flex flex-column h-100">
                         <img
@@ -396,14 +514,14 @@
                         />
                         <div class="card-body">
                           <p
-                            class="badge border border-dark fw-light text-dark mb-0"
+                            class="badge border border-dark fw-light text-dark mb-0 bg-light"
                           >
                             好評再返場
                           </p>
                           <br />
-                          <small class="card-title fw-light"
-                            >( Dream Plaza )
-                          </small>
+                          <small class="card-title fw-light bg-light"
+                            >( Dream Plaza )</small
+                          >
 
                           <p
                             class="card-text fw-bold mt-2 text-decoration-underline"
@@ -415,31 +533,44 @@
                           class="card-footer border-0 py-0 mt-auto bg-transparent"
                         >
                           <div class="mb-2 mt-auto">
-                            <span class="badge border border-1 border-dark">
+                            <span
+                              class="badge border border-1 border-dark bg-light"
+                            >
                               <a href="#" class="text-dark text-decoration-none"
                                 >最後賞 1/1</a
                               >
                             </span>
                             <span
-                              class="badge border border-1 border-dark disabled"
+                              class="badge border border-1 border-dark disabled bg-light"
                             >
                               <a href="#" class="text-dark text-decoration-none"
                                 >限定賞 0/10</a
                               >
                             </span>
+                            <span
+                              class="badge border border-1 border-dark disabled bg-light"
+                            >
+                              <a href="#" class="text-dark text-decoration-none"
+                                >SP賞 0/10</a
+                              >
+                            </span>
                           </div>
-                          <a
-                            href="#"
-                            class="btn btn-primary d-inline-block w-100 border border-1 border-dark mt-auto"
-                            >馬上抽</a
-                          >
+                          <div class="position-relative">
+                            <a
+                              href="./event_detail.html"
+                              class="btn btn-primary d-inline-block w-100 border border-1 border-dark text-white fw-bold mt-auto card-btn"
+                              ><p class="mb-0">馬上抽</p></a
+                            >
+                          </div>
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
                 <div class="col">
-                  <div class="card rounded-4 border-dark h-100">
+                  <div
+                    class="card rounded-4 border-dark h-100 card-bg-line card-shadow card-transformY"
+                  >
                     <div class="p-3 h-100">
                       <div class="d-flex flex-column h-100">
                         <img
@@ -448,13 +579,14 @@
                           alt="..."
                         />
                         <div class="card-body">
-                          <p
-                            class="badge border border-dark fw-light text-dark mb-0"
+                          <span
+                            class="badge border border-dark fw-light text-dark mb-0 bg-light"
                           >
                             新品登場
-                          </p>
+                          </span>
+
                           <br />
-                          <small class="card-title fw-light"
+                          <small class="card-title fw-light bg-light"
                             >( Happyくじ ) 快樂賞</small
                           >
 
@@ -468,38 +600,50 @@
                           class="card-footer border-0 py-0 mt-auto bg-transparent"
                         >
                           <div class="mb-2 mt-auto">
-                            <span class="badge border border-1 border-dark">
+                            <span
+                              class="badge border border-1 border-dark bg-light"
+                            >
                               <a href="#" class="text-dark text-decoration-none"
                                 >最後賞 1/1</a
                               >
                             </span>
                             <span
-                              class="badge border border-1 border-dark disabled"
+                              class="badge border border-1 border-dark disabled bg-light"
                             >
                               <a href="#" class="text-dark text-decoration-none"
                                 >限定賞 0/10</a
                               >
                             </span>
                             <span
-                              class="badge border border-1 border-dark disabled"
+                              class="badge border border-1 border-dark disabled bg-light"
                             >
                               <a href="#" class="text-dark text-decoration-none"
                                 >SP賞 0/10</a
                               >
                             </span>
                           </div>
-                          <a
-                            href="#"
-                            class="btn btn-primary d-inline-block w-100 border border-1 border-dark mt-auto"
-                            >馬上抽</a
-                          >
+                          <div class="position-relative">
+                            <a
+                              href="./event_detail.html"
+                              class="btn btn-primary d-inline-block w-100 border border-1 border-dark text-white fw-bold mt-auto card-btn"
+                              ><p class="mb-0">
+                                馬上抽<span
+                                  class="bbh-hegarty-regular badge bg-dark rounded-circle position-absolute top-0 start-100 translate-middle border border-1 py-2"
+                                >
+                                  10% <br />off
+                                </span>
+                              </p></a
+                            >
+                          </div>
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
                 <div class="col">
-                  <div class="card rounded-4 border-dark h-100">
+                  <div
+                    class="card rounded-4 border-dark h-100 card-bg-line card-shadow card-transformY"
+                  >
                     <div class="p-3 h-100">
                       <div class="d-flex flex-column h-100">
                         <img
@@ -509,14 +653,14 @@
                         />
                         <div class="card-body">
                           <p
-                            class="badge border border-dark fw-light text-dark mb-0"
+                            class="badge border border-dark fw-light text-dark mb-0 bg-light"
                           >
                             好評再返場
                           </p>
                           <br />
-                          <small class="card-title fw-light"
-                            >( Dream Plaza )
-                          </small>
+                          <small class="card-title fw-light bg-light"
+                            >( Dream Plaza )</small
+                          >
 
                           <p
                             class="card-text fw-bold mt-2 text-decoration-underline"
@@ -528,31 +672,44 @@
                           class="card-footer border-0 py-0 mt-auto bg-transparent"
                         >
                           <div class="mb-2 mt-auto">
-                            <span class="badge border border-1 border-dark">
+                            <span
+                              class="badge border border-1 border-dark bg-light"
+                            >
                               <a href="#" class="text-dark text-decoration-none"
                                 >最後賞 1/1</a
                               >
                             </span>
                             <span
-                              class="badge border border-1 border-dark disabled"
+                              class="badge border border-1 border-dark disabled bg-light"
                             >
                               <a href="#" class="text-dark text-decoration-none"
                                 >限定賞 0/10</a
                               >
                             </span>
+                            <span
+                              class="badge border border-1 border-dark disabled bg-light"
+                            >
+                              <a href="#" class="text-dark text-decoration-none"
+                                >SP賞 0/10</a
+                              >
+                            </span>
                           </div>
-                          <a
-                            href="#"
-                            class="btn btn-primary d-inline-block w-100 border border-1 border-dark mt-auto"
-                            >馬上抽</a
-                          >
+                          <div class="position-relative">
+                            <a
+                              href="./event_detail.html"
+                              class="btn btn-primary d-inline-block w-100 border border-1 border-dark text-white fw-bold mt-auto card-btn"
+                              ><p class="mb-0">馬上抽</p></a
+                            >
+                          </div>
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
                 <div class="col">
-                  <div class="card rounded-4 border-dark h-100">
+                  <div
+                    class="card rounded-4 border-dark h-100 card-bg-line card-shadow card-transformY"
+                  >
                     <div class="p-3 h-100">
                       <div class="d-flex flex-column h-100">
                         <img
@@ -561,13 +718,14 @@
                           alt="..."
                         />
                         <div class="card-body">
-                          <p
-                            class="badge border border-dark fw-light text-dark mb-0"
+                          <span
+                            class="badge border border-dark fw-light text-dark mb-0 bg-light"
                           >
                             新品登場
-                          </p>
+                          </span>
+
                           <br />
-                          <small class="card-title fw-light"
+                          <small class="card-title fw-light bg-light"
                             >( Happyくじ ) 快樂賞</small
                           >
 
@@ -581,38 +739,50 @@
                           class="card-footer border-0 py-0 mt-auto bg-transparent"
                         >
                           <div class="mb-2 mt-auto">
-                            <span class="badge border border-1 border-dark">
+                            <span
+                              class="badge border border-1 border-dark bg-light"
+                            >
                               <a href="#" class="text-dark text-decoration-none"
                                 >最後賞 1/1</a
                               >
                             </span>
                             <span
-                              class="badge border border-1 border-dark disabled"
+                              class="badge border border-1 border-dark disabled bg-light"
                             >
                               <a href="#" class="text-dark text-decoration-none"
                                 >限定賞 0/10</a
                               >
                             </span>
                             <span
-                              class="badge border border-1 border-dark disabled"
+                              class="badge border border-1 border-dark disabled bg-light"
                             >
                               <a href="#" class="text-dark text-decoration-none"
                                 >SP賞 0/10</a
                               >
                             </span>
                           </div>
-                          <a
-                            href="#"
-                            class="btn btn-primary d-inline-block w-100 border border-1 border-dark mt-auto"
-                            >馬上抽</a
-                          >
+                          <div class="position-relative">
+                            <a
+                              href="./event_detail.html"
+                              class="btn btn-primary d-inline-block w-100 border border-1 border-dark text-white fw-bold mt-auto card-btn"
+                              ><p class="mb-0">
+                                馬上抽<span
+                                  class="bbh-hegarty-regular badge bg-dark rounded-circle position-absolute top-0 start-100 translate-middle border border-1 py-2"
+                                >
+                                  10% <br />off
+                                </span>
+                              </p></a
+                            >
+                          </div>
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
                 <div class="col">
-                  <div class="card rounded-4 border-dark h-100">
+                  <div
+                    class="card rounded-4 border-dark h-100 card-bg-line card-shadow card-transformY"
+                  >
                     <div class="p-3 h-100">
                       <div class="d-flex flex-column h-100">
                         <img
@@ -622,14 +792,14 @@
                         />
                         <div class="card-body">
                           <p
-                            class="badge border border-dark fw-light text-dark mb-0"
+                            class="badge border border-dark fw-light text-dark mb-0 bg-light"
                           >
                             好評再返場
                           </p>
                           <br />
-                          <small class="card-title fw-light"
-                            >( Dream Plaza )
-                          </small>
+                          <small class="card-title fw-light bg-light"
+                            >( Dream Plaza )</small
+                          >
 
                           <p
                             class="card-text fw-bold mt-2 text-decoration-underline"
@@ -641,31 +811,44 @@
                           class="card-footer border-0 py-0 mt-auto bg-transparent"
                         >
                           <div class="mb-2 mt-auto">
-                            <span class="badge border border-1 border-dark">
+                            <span
+                              class="badge border border-1 border-dark bg-light"
+                            >
                               <a href="#" class="text-dark text-decoration-none"
                                 >最後賞 1/1</a
                               >
                             </span>
                             <span
-                              class="badge border border-1 border-dark disabled"
+                              class="badge border border-1 border-dark disabled bg-light"
                             >
                               <a href="#" class="text-dark text-decoration-none"
                                 >限定賞 0/10</a
                               >
                             </span>
+                            <span
+                              class="badge border border-1 border-dark disabled bg-light"
+                            >
+                              <a href="#" class="text-dark text-decoration-none"
+                                >SP賞 0/10</a
+                              >
+                            </span>
                           </div>
-                          <a
-                            href="#"
-                            class="btn btn-primary d-inline-block w-100 border border-1 border-dark mt-auto"
-                            >馬上抽</a
-                          >
+                          <div class="position-relative">
+                            <a
+                              href="./event_detail.html"
+                              class="btn btn-primary d-inline-block w-100 border border-1 border-dark text-white fw-bold mt-auto card-btn"
+                              ><p class="mb-0">馬上抽</p></a
+                            >
+                          </div>
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
                 <div class="col">
-                  <div class="card rounded-4 border-dark h-100">
+                  <div
+                    class="card rounded-4 border-dark h-100 card-bg-line card-shadow card-transformY"
+                  >
                     <div class="p-3 h-100">
                       <div class="d-flex flex-column h-100">
                         <img
@@ -674,13 +857,14 @@
                           alt="..."
                         />
                         <div class="card-body">
-                          <p
-                            class="badge border border-dark fw-light text-dark mb-0"
+                          <span
+                            class="badge border border-dark fw-light text-dark mb-0 bg-light"
                           >
                             新品登場
-                          </p>
+                          </span>
+
                           <br />
-                          <small class="card-title fw-light"
+                          <small class="card-title fw-light bg-light"
                             >( Happyくじ ) 快樂賞</small
                           >
 
@@ -694,38 +878,50 @@
                           class="card-footer border-0 py-0 mt-auto bg-transparent"
                         >
                           <div class="mb-2 mt-auto">
-                            <span class="badge border border-1 border-dark">
+                            <span
+                              class="badge border border-1 border-dark bg-light"
+                            >
                               <a href="#" class="text-dark text-decoration-none"
                                 >最後賞 1/1</a
                               >
                             </span>
                             <span
-                              class="badge border border-1 border-dark disabled"
+                              class="badge border border-1 border-dark disabled bg-light"
                             >
                               <a href="#" class="text-dark text-decoration-none"
                                 >限定賞 0/10</a
                               >
                             </span>
                             <span
-                              class="badge border border-1 border-dark disabled"
+                              class="badge border border-1 border-dark disabled bg-light"
                             >
                               <a href="#" class="text-dark text-decoration-none"
                                 >SP賞 0/10</a
                               >
                             </span>
                           </div>
-                          <a
-                            href="#"
-                            class="btn btn-primary d-inline-block w-100 border border-1 border-dark mt-auto"
-                            >馬上抽</a
-                          >
+                          <div class="position-relative">
+                            <a
+                              href="./event_detail.html"
+                              class="btn btn-primary d-inline-block w-100 border border-1 border-dark text-white fw-bold mt-auto card-btn"
+                              ><p class="mb-0">
+                                馬上抽<span
+                                  class="bbh-hegarty-regular badge bg-dark rounded-circle position-absolute top-0 start-100 translate-middle border border-1 py-2"
+                                >
+                                  10% <br />off
+                                </span>
+                              </p></a
+                            >
+                          </div>
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
                 <div class="col">
-                  <div class="card rounded-4 border-dark h-100">
+                  <div
+                    class="card rounded-4 border-dark h-100 card-bg-line card-shadow card-transformY"
+                  >
                     <div class="p-3 h-100">
                       <div class="d-flex flex-column h-100">
                         <img
@@ -735,14 +931,14 @@
                         />
                         <div class="card-body">
                           <p
-                            class="badge border border-dark fw-light text-dark mb-0"
+                            class="badge border border-dark fw-light text-dark mb-0 bg-light"
                           >
                             好評再返場
                           </p>
                           <br />
-                          <small class="card-title fw-light"
-                            >( Dream Plaza )
-                          </small>
+                          <small class="card-title fw-light bg-light"
+                            >( Dream Plaza )</small
+                          >
 
                           <p
                             class="card-text fw-bold mt-2 text-decoration-underline"
@@ -754,24 +950,35 @@
                           class="card-footer border-0 py-0 mt-auto bg-transparent"
                         >
                           <div class="mb-2 mt-auto">
-                            <span class="badge border border-1 border-dark">
+                            <span
+                              class="badge border border-1 border-dark bg-light"
+                            >
                               <a href="#" class="text-dark text-decoration-none"
                                 >最後賞 1/1</a
                               >
                             </span>
                             <span
-                              class="badge border border-1 border-dark disabled"
+                              class="badge border border-1 border-dark disabled bg-light"
                             >
                               <a href="#" class="text-dark text-decoration-none"
                                 >限定賞 0/10</a
                               >
                             </span>
+                            <span
+                              class="badge border border-1 border-dark disabled bg-light"
+                            >
+                              <a href="#" class="text-dark text-decoration-none"
+                                >SP賞 0/10</a
+                              >
+                            </span>
                           </div>
-                          <a
-                            href="#"
-                            class="btn btn-primary d-inline-block w-100 border border-1 border-dark mt-auto"
-                            >馬上抽</a
-                          >
+                          <div class="position-relative">
+                            <a
+                              href="./event_detail.html"
+                              class="btn btn-primary d-inline-block w-100 border border-1 border-dark text-white fw-bold mt-auto card-btn"
+                              ><p class="mb-0">馬上抽</p></a
+                            >
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -786,7 +993,7 @@
       <!-- CTA start -->
       <div class="text-center bg-primary py-3">
         <a
-          href="#"
+          href="./event_list.html"
           class="text-uppercase text-light fw-bold text-decoration-none d-inline-block w-100"
           >view all Event</a
         >
@@ -884,53 +1091,146 @@
               </div>
             </div>
           </div>
-
-          <!-- ad -- 暫時先取消
-          <div
-            class="row row-cols-1 row-cols-md-2 justify-content-center g-md-5 g-3"
-          >
-            <div class="col-12 col-md-4">
-              <a href="#">
-                <img
-                  src="../assets/image/ad-1.png"
-                  alt=""
-                  class="img-fluid w-100"
-                />
-              </a>
-            </div>
-            <div class="col-12 col-md-4">
-              <a href="#">
-                <img
-                  src="../assets/image/ad-2.png"
-                  alt=""
-                  class="img-fluid w-100"
-                />
-              </a>
-            </div>
-          </div> -->
         </div>
       </div>
     </section>
     <!-- toy news end -->
     <!-- footer start -->
-    <footer class="bg-primary">
+
+    <footer>
+      <div
+        class="bg-warning border-top border-bottom border-2 border-dark py-2 overflow-hidden position-relative"
+        style="z-index: 2"
+      >
+        <div
+          class="footer-marquee fw-bold text-uppercase d-flex gap-5"
+          style="white-space: nowrap"
+        >
+          <span>👾 GAME OVER? INSERT COIN TO CONTINUE</span>
+          <span>★ FOLLOW US FOR MORE LOOT</span>
+          <span>👾 GAME OVER? INSERT COIN TO CONTINUE</span>
+          <span>★ FOLLOW US FOR MORE LOOT</span>
+          <span>👾 GAME OVER? INSERT COIN TO CONTINUE</span>
+          <span>★ FOLLOW US FOR MORE LOOT</span>
+        </div>
+      </div>
       <div class="container">
-        <div class="py-4 text-center">
-          <h2
-            class="dela-gothic-one-regular display-1 text-center text-light logoRotate logoShadow"
-          >
-            一番くじ
-          </h2>
-          <!-- 再處理 footer 寬度 -->
-          <div class="menu border-bottom border-1 container-xs">
-            <p class="fw-bold">MENU</p>
-            <ul class="d-flex list-unstyled">
+        <div class="row justify-content-between py-5">
+          <div class="col-lg-4">
+            <h2
+              class="dela-gothic-one-regular display-6 text-white logoRotate logoShadow"
+            >
+              一番くじ
+            </h2>
+            <small class="text-start">
+              專為藏家打造的線上抽賞平台。<br />
+              集結日系動漫、潮流公仔，在家也能享受拆箱快感。<br />
+              Made with 💖 & ⚡ in 2025.
+            </small>
+            <div class="media">
+              <a href="#" class="d-inline-block p-2"
+                ><i class="bi bi-line fs-5 text-info"></i
+              ></a>
+              <a href="#" class="d-inline-block p-2"
+                ><i class="bi bi-instagram fs-5 text-info"></i
+              ></a>
+              <a href="#" class="d-inline-block p-2"
+                ><i class="bi bi-facebook fs-5 text-info"></i
+              ></a>
+              <a href="#" class="d-inline-block p-2"
+                ><i class="bi bi-threads fs-5 text-info"></i
+              ></a>
+            </div>
+          </div>
+          <div class="col-lg-2">
+            <ul class="list-unstyled text-nowrap ms-auto">
+              <h5
+                class="bbh-hegarty-regular text-decoration-underline text-info"
+              >
+                INFO
+              </h5>
               <li>
-                <a href="#" class="text-decoration-none text-light">最新消息</a>
+                <a href="#" class="text-dark text-decoration-none"
+                  >常見問題 Q&A</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-dark text-decoration-none">會員權益</a>
+              </li>
+              <li>
+                <a href="#" class="text-dark text-decoration-none"
+                  >隱私權條款</a
+                >
               </li>
             </ul>
           </div>
+          <div class="col-lg-2">
+            <ul class="list-unstyled text-nowrap">
+              <h5
+                class="bbh-hegarty-regular text-decoration-underline text-info"
+              >
+                Map
+              </h5>
+              <li class="col-6">
+                <a href="#" class="text-dark text-decoration-none"
+                  >新手教學指南</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-dark text-decoration-none"
+                  >運費與配送</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-dark text-decoration-none"
+                  >退換貨政策</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-dark text-decoration-none">聯絡客服</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-3">
+            <div>
+              <h5
+                class="bbh-hegarty-regular text-decoration-underline text-primary"
+              >
+                NEWSLETTER
+              </h5>
+              <small> 訂閱電子報，絕不錯過任何一檔限定賞！ </small>
+              <div class="input-group mt-3">
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="輸入您的信箱"
+                  aria-label="輸入您的信箱"
+                  aria-describedby="button-addon2"
+                />
+                <button
+                  class="btn btn-primary text-light"
+                  type="button"
+                  id="button-addon2"
+                >
+                  Button
+                </button>
+              </div>
+              <div class="pay">
+                <a href="#" class="d-inline-block p-2"
+                  ><i class="bi bi-credit-card fs-5 text-dark"></i
+                ></a>
+                <a href="#" class="d-inline-block p-2"
+                  ><i class="bi bi-paypal fs-5 text-dark"></i
+                ></a>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
+      <div class="bg-dark text-center py-2 border-top border-secondary">
+        <small class="text-secondary font-monospace"
+          >© 2025 ICHIBAN KUJI. ALL RIGHTS RESERVED.</small
+        >
       </div>
     </footer>
     <!-- footer end -->

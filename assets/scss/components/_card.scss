@@ -1,5 +1,5 @@
 .card-shadow{
-    box-shadow: 2px 2px gray;
+    box-shadow: 2px 2px $dark;
 }
 
 .card-bg-line{
@@ -7,12 +7,28 @@ background-image:
     repeating-linear-gradient(
         to right, 
         transparent 27px 90px, 
-        rgba(254, 6, 167, 0.2) -3px 91px
+        $info-20 -3px 91px
     ), 
         
     repeating-linear-gradient(
         to top, 
-        transparent 39px 90px, 
-        rgba(254, 6, 167, 0.2) 0px 91px
+        transparent 25px 90px, 
+        $info-20 0px 91px
     )
+}
+
+.card-btn {
+    box-shadow: 0px 2px $dark;
+    transition: transform 0.5s ease,
+                box-shadow 0.5 ease;
+}
+
+.card-btn:hover {
+  transform: translateY(1px);
+  box-shadow: none;
+}
+
+.card-btn:active {
+  transform: translateY(4px);
+  box-shadow: none;
 }

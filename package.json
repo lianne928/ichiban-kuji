@@ -4,10 +4,13 @@
     "bootstrap-icons": "^1.13.1"
   },
   "devDependencies": {
-    "sass": "^1.97.0"
+    "sass": "^1.97.1"
   },
   "scripts": {
-    "sass": "sass assets/scss/all.scss assets/css/all.css --watch"
+    "sass": "sass assets/scss/all.scss assets/css/all.css --watch",
+    "build:css": "sass assets/scss/all.scss assets/css/all.css --no-source-map",
+    "watch:css": "sass --watch assets/scss:assets/css --no-source-map",
+    "build:css:prod": "sass assets/scss/all.scss assets/css/all.css --style=compressed"
   },
   "name": "ichiban-kuji",
   "version": "1.0.0",

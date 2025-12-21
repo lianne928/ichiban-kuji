@@ -1,5 +1,5 @@
 .dot{
-    border: 1px dashed black;
+    border: 1px dashed $dark;
 }
 
 .bg-line{
@@ -7,8 +7,12 @@
     repeating-linear-gradient(
         to right, 
         transparent  0 80px, 
-        #ff77e285 -2px 81px
+        $info-20 -2px 81px
+    ),
+    repeating-linear-gradient(
+        to top, 
+        transparent  0px 80px, 
+        $info-20 0px 81px
     )
-    
 }
 

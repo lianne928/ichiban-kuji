@@ -2,6 +2,11 @@
     transform: translateX(16px);
 }
 
+header button[class*="outline"]{
+    background-color: $white;
+    color: $dark;
+}
+
 header button[class*="outline"]:hover{
-    background-color: rgb(241, 28, 241);
+    background-color: $primary;
 }
