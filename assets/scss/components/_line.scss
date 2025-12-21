@@ -16,3 +16,15 @@
     )
 }
 
+.border-lg-start {
+
+  @media (min-width: 992px) {
+    border-left: 1px solid $border-color;
+  }
+}
+.border-lg-end {
+
+  @media (min-width: 992px) {
+    border-right: 1px solid $border-color;
+  }
+}

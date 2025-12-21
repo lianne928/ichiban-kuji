@@ -12091,6 +12091,18 @@ textarea.form-control-lg {
   background-image: repeating-linear-gradient(to right, transparent 0 80px, #9eecff -2px 81px), repeating-linear-gradient(to top, transparent 0px 80px, #9eecff 0px 81px);
 }
 
+@media (min-width: 992px) {
+  .border-lg-start {
+    border-left: 1px solid #393939;
+  }
+}
+
+@media (min-width: 992px) {
+  .border-lg-end {
+    border-right: 1px solid #393939;
+  }
+}
+
 .auth-right {
   transform: translateX(16px);
 }
@@ -12106,6 +12118,10 @@ header button[class*=outline]:hover {
 
 .text-xs {
   font-size: 12px;
+}
+
+.text-s {
+  font-size: 14px;
 }
 
 .track {
@@ -12166,3 +12182,5 @@ header button[class*=outline]:hover {
 .rotate {
   transform: rotate(-10deg);
 }
+
+/*# sourceMappingURL=all.css.map */

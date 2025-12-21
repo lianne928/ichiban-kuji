@@ -16,34 +16,61 @@
     <link rel="stylesheet" href="../assets/css/all.css" />
   </head>
   <body>
+    <!-- header start -->
     <header class="border-bottom border-dark">
       <div class="container">
         <div class="d-flex justify-content-between align-items-center">
           <div>
-            <h2
-              class="dela-gothic-one-regular display-1 text-center text-light logoRotate logoShadow"
-            >
-              一番くじ
-            </h2>
+            <a href="index.html" class="text-decoration-none">
+              <h2
+                class="dela-gothic-one-regular display-1 text-center text-white logoRotate logoShadow"
+              >
+                一番くじ
+              </h2>
+            </a>
           </div>
-          <div class="d-flex">
-            <button
-              type="button"
-              class="btn btn-dark rounded-circle px-5 auth-right"
+          <!-- Nav -->
+          <nav class="ms-auto">
+            <ul
+              class="list-unstyled d-flex align-items-center gap-3 mb-0 justify-content-center"
             >
-              註冊
-            </button>
-            <button
-              type="button"
-              class="btn btn-outline-dark dot rounded-circle px-5"
-            >
-              登入
-            </button>
+              <li class="transformskew-xs">
+                <a href="event_list.html" class="nav-link-custom text-dark">
+                  (<span class="text-decoration-underline"> 抽賞須知 </span>)
+                </a>
+              </li>
+              <li class="transformskew-xs">
+                <a href="event_list.html" class="nav-link-custom text-dark">
+                  (
+                  <span class="text-decoration-underline">
+                    一番くじ 精選企劃一覽 </span
+                  >)
+                </a>
+              </li>
+            </ul>
+          </nav>
+
+          <!-- Auth buttons -->
+          <div>
+            <div class="d-flex gap-2">
+              <button
+                type="button"
+                class="btn btn-dark rounded-circle px-5 auth-right"
+              >
+                註冊
+              </button>
+              <button
+                type="button"
+                class="btn btn-outline-dark dot rounded-circle px-5"
+              >
+                登入
+              </button>
+            </div>
           </div>
         </div>
       </div>
     </header>
-
+    <!-- header end -->
     <!-- marquee start -->
     <div
       class="border-bottom border-dark text-nowrap overflow-hidden bg-primary"
@@ -411,7 +438,7 @@
               </div>
             </div>
           </div>
-          <!-- aside 側邊資訊欄：開抽日期 (Ｏ) /大獎獎項 剩餘抽數（*) / 優惠（價錢） / CTA (O)-->
+          <!-- aside -->
           <aside
             class="col-12 col-lg-3 border-1 border-start border-dark pt-5 px-0 position-relative"
           >
@@ -495,5 +522,141 @@
       </div>
     </main>
     <!-- main end -->
+    <!-- footer start -->
+    <footer>
+      <!-- marquee start -->
+      <div
+        class="border-bottom border-top border-dark text-nowrap overflow-hidden bg-warning text-dark"
+      >
+        <div class="track py-2 w-100 d-flex gap-3">
+          <span>👾 GAME OVER? INSERT COIN TO CONTINUE</span>
+          <span>★ FOLLOW US FOR MORE LOOT</span>
+          <span>👾 GAME OVER? INSERT COIN TO CONTINUE</span>
+          <span>★ FOLLOW US FOR MORE LOOT</span>
+          <span>👾 GAME OVER? INSERT COIN TO CONTINUE</span>
+          <span>★ FOLLOW US FOR MORE LOOT</span>
+        </div>
+      </div>
+      <!-- marquee end -->
+      <div class="container">
+        <div class="row justify-content-between py-5">
+          <div class="col-lg-4">
+            <h2
+              class="dela-gothic-one-regular display-6 text-white logoRotate logoShadow"
+            >
+              一番くじ
+            </h2>
+            <small class="text-start">
+              專為藏家打造的線上抽賞平台。<br />
+              集結日系動漫、潮流公仔，在家也能享受拆箱快感。<br />
+              Made with 💖 & ⚡ in 2025.
+            </small>
+            <div class="media">
+              <a href="#" class="d-inline-block p-2"
+                ><i class="bi bi-line fs-5 text-info"></i
+              ></a>
+              <a href="#" class="d-inline-block p-2"
+                ><i class="bi bi-instagram fs-5 text-info"></i
+              ></a>
+              <a href="#" class="d-inline-block p-2"
+                ><i class="bi bi-facebook fs-5 text-info"></i
+              ></a>
+              <a href="#" class="d-inline-block p-2"
+                ><i class="bi bi-threads fs-5 text-info"></i
+              ></a>
+            </div>
+          </div>
+          <div class="col-lg-2">
+            <ul class="list-unstyled text-nowrap ms-auto">
+              <h5
+                class="bbh-hegarty-regular text-decoration-underline text-info"
+              >
+                INFO
+              </h5>
+              <li class="py-1">
+                <a href="#" class="text-dark text-decoration-none"
+                  >常見問題 Q&A</a
+                >
+              </li>
+              <li class="py-1">
+                <a href="#" class="text-dark text-decoration-none">會員權益</a>
+              </li>
+              <li class="py-1">
+                <a href="#" class="text-dark text-decoration-none"
+                  >隱私權條款</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-2">
+            <ul class="list-unstyled text-nowrap">
+              <h5
+                class="bbh-hegarty-regular text-decoration-underline text-info"
+              >
+                Map
+              </h5>
+              <li class="py-1">
+                <a href="#" class="text-dark text-decoration-none"
+                  >新手教學指南</a
+                >
+              </li>
+              <li class="py-1">
+                <a href="#" class="text-dark text-decoration-none"
+                  >運費與配送</a
+                >
+              </li>
+              <li class="py-1">
+                <a href="#" class="text-dark text-decoration-none"
+                  >退換貨政策</a
+                >
+              </li>
+              <li class="py-1">
+                <a href="#" class="text-dark text-decoration-none">聯絡客服</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-3">
+            <div>
+              <h5
+                class="bbh-hegarty-regular text-decoration-underline text-primary"
+              >
+                NEWSLETTER
+              </h5>
+              <small> 訂閱電子報，絕不錯過任何一檔限定賞！ </small>
+              <div class="input-group mt-3">
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="輸入您的信箱"
+                  aria-label="輸入您的信箱"
+                  aria-describedby="button-addon2"
+                />
+                <button
+                  class="btn btn-primary text-light"
+                  type="button"
+                  id="button-addon2"
+                >
+                  Button
+                </button>
+              </div>
+              <div class="pay">
+                <a href="#" class="d-inline-block p-2"
+                  ><i class="bi bi-credit-card fs-5 text-dark"></i
+                ></a>
+                <a href="#" class="d-inline-block p-2"
+                  ><i class="bi bi-paypal fs-5 text-dark"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="bg-dark text-center py-2 border-top border-secondary">
+        <small class="text-secondary font-monospace"
+          >© 2025 ICHIBAN KUJI. ALL RIGHTS RESERVED.</small
+        >
+      </div>
+    </footer>
+    <!-- footer end -->
   </body>
 </html>
