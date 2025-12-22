@@ -16,6 +16,8 @@
     <link rel="stylesheet" href="../assets/css/all.css" />
   </head>
   <body>
+    <div id="toastBackdrop" class="toast-backdrop"></div>
+
     <!-- header start -->
     <header class="border-bottom border-dark">
       <div class="container">
@@ -556,11 +558,12 @@
               <!-- 抽賞資訊 -->
               <!-- 優惠（價錢）組 -fixed -->
               <div
-                class="position-fixed bottom-0 end-0 pe-4 pe-lg-5 mb-5 d-flex flex-column gap-4"
+                class="position-fixed bottom-0 end-0 pe-4 pe-lg-5 mb-5 d-flex flex-column gap-3"
               >
                 <button
                   class="btn border border-1 border-dark bg-light"
                   type="button"
+                  id="liveToastBtn"
                 >
                   <span class="mb-0">一抽</span>
                   <small class="text-decoration-line-through"
@@ -569,6 +572,58 @@
                   <small>特價</small>
                   <span class="bbh-hegarty-regular mb-0 fs-4">450<br /></span>
                 </button>
+
+                <div
+                  aria-live="polite"
+                  aria-atomic="true"
+                  class="d-grid mx-auto justify-content-center align-items-center w-100 shadow-5"
+                >
+                  <div
+                    class="position-fixed top-25 start-50 translate-middle p-3"
+                  >
+                    <div
+                      id="liveToast"
+                      class="toast"
+                      role="alert"
+                      aria-live="assertive"
+                      aria-atomic="true"
+                    >
+                      <div class="toast-header">
+                        <button
+                          type="button"
+                          class="btn-close ms-auto"
+                          data-bs-dismiss="toast"
+                          aria-label="Close"
+                        ></button>
+                      </div>
+                      <div class="bg-light rounded-4 border-1 border-dark">
+                        <img
+                          src="../assets/image/eventPagesMainImage.jpg"
+                          class="card-img-top"
+                          alt="..."
+                        />
+
+                        <div class="card-body p-3">
+                          <h5 class="card-title py-2">
+                            TOM and JERRY FUNNY ART! 5
+                          </h5>
+                          <small
+                            class="card-text d-inline-block bg-warning px-2"
+                            >抽出後不得以任何理由退換以及取消抽賞</small
+                          >
+                          <div class="pt-5">
+                            <a
+                              href="./event_detail.html"
+                              class="btn btn-primary d-inline-block w-100 border border-1 border-dark text-white fw-bold mt-auto card-btn"
+                              ><p class="mb-0">立即抽出獎賞</p></a
+                            >
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
                 <button
                   class="btn border border-1 border-dark position-relative bg-light"
                   type="button"
@@ -732,5 +787,25 @@
       integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
       crossorigin="anonymous"
     ></script>
+
+    <script>
+      const toastTrigger = document.getElementById("liveToastBtn");
+      const toastEl = document.getElementById("liveToast");
+      const backdrop = document.getElementById("toastBackdrop");
+
+      const toast = new bootstrap.Toast(toastEl, {
+        autohide: false,
+        delay: 8000,
+      });
+
+      toastTrigger.addEventListener("click", () => {
+        backdrop.classList.add("show");
+        toast.show();
+      });
+
+      toastEl.addEventListener("hidden.bs.toast", () => {
+        backdrop.classList.remove("show");
+      });
+    </script>
   </body>
 </html>
