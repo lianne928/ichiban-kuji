@@ -16,6 +16,8 @@
     <link rel="stylesheet" href="../assets/css/all.css" />
   </head>
   <body>
+    <div id="toastBackdrop" class="toast-backdrop"></div>
+
     <!-- header start -->
     <header class="border-bottom border-dark">
       <div class="container">
@@ -180,16 +182,7 @@
                   >
                     <a href="#" class="text-decoration-none text-light"
                       ><small class="mb-0 py-1 px-2 text-light"
-                        >一番賞</small
-                      ></a
-                    >
-                  </div>
-                  <div
-                    class="bg-primary d-inline-block rounded-1 border border-1 border-dark"
-                  >
-                    <a href="#" class="text-decoration-none text-light"
-                      ><small class="mb-0 py-3 px-2 text-light"
-                        >Last 最後賞</small
+                        >公仔週邊</small
                       ></a
                     >
                   </div>
@@ -202,13 +195,19 @@
 
                 <div class="pt-3">
                   <small class="mb-0 fw-light border px-2 border-1 rounded-1"
-                    >Parade</small
+                    >( Happyくじ ) 快樂賞</small
                   >
                   <h2 class="fw-bold mt-2">TOM and JERRY FUNNY ART! 5</h2>
                 </div>
                 <div class="border-bottom border-1 border-dark"></div>
                 <div class="pt-3">
-                  <p>0公分超巨型「瓶子湯姆貓」Last最後賞！</p>
+                  <p>
+                    2025年壓軸最爆笑、最具收藏價值的經典動畫抽賞來了！快樂賞
+                    (Happyくじ)宣布將於2025年12月26日推出最新系列《TOM and JERRY
+                    FUNNY ART! 5》周邊抽選。這一次以經典回憶瞬間、TOM and
+                    JERRY爆笑名場面為主題，將湯姆貓與傑利鼠的經典鬧劇全面「立體化」，推出20款A賞立體模型公仔、其他賞品如T
+                    恤、托特包、貼紙、絨毛玩偶等超豐富獎項，甚至還有粉絲必收的50公分巨大傑利鼠絨毛特賞、60公分超巨型「瓶子湯姆貓」Last最後賞！
+                  </p>
                 </div>
 
                 <!-- 獎項 剩餘抽數 -->
@@ -509,7 +508,7 @@
           </div>
           <!-- aside -->
           <aside
-            class="col-12 col-lg-3 border-1 border-lg-start border-dark pt-lg-5 pt-2 pb-5 px-0 position-relative"
+            class="col-12 col-lg-3 border-1 border-lg-start border-dark pt-5 px-0 position-relative"
           >
             <div class="text-center d-flex flex-column">
               <!-- 開抽日期 -->
@@ -556,11 +555,12 @@
               <!-- 抽賞資訊 -->
               <!-- 優惠（價錢）組 -fixed -->
               <div
-                class="position-fixed bottom-0 end-0 pe-4 pe-lg-5 mb-5 d-flex flex-column gap-4"
+                class="position-fixed bottom-0 end-0 pe-4 pe-lg-5 mb-5 d-flex flex-column gap-3"
               >
                 <button
                   class="btn border border-1 border-dark bg-light"
                   type="button"
+                  id="liveToastBtn"
                 >
                   <span class="mb-0">一抽</span>
                   <small class="text-decoration-line-through"
@@ -569,6 +569,58 @@
                   <small>特價</small>
                   <span class="bbh-hegarty-regular mb-0 fs-4">450<br /></span>
                 </button>
+
+                <div
+                  aria-live="polite"
+                  aria-atomic="true"
+                  class="d-grid mx-auto justify-content-center align-items-center w-100 shadow-5"
+                >
+                  <div
+                    class="position-fixed top-25 start-50 translate-middle p-3"
+                  >
+                    <div
+                      id="liveToast"
+                      class="toast"
+                      role="alert"
+                      aria-live="assertive"
+                      aria-atomic="true"
+                    >
+                      <div class="toast-header">
+                        <button
+                          type="button"
+                          class="btn-close ms-auto"
+                          data-bs-dismiss="toast"
+                          aria-label="Close"
+                        ></button>
+                      </div>
+                      <div class="bg-light rounded-4 border-1 border-dark">
+                        <img
+                          src="../assets/image/eventPagesMainImage.jpg"
+                          class="card-img-top"
+                          alt="..."
+                        />
+
+                        <div class="card-body p-3">
+                          <h5 class="card-title py-2">
+                            TOM and JERRY FUNNY ART! 5
+                          </h5>
+                          <small
+                            class="card-text d-inline-block bg-warning px-2"
+                            >抽出後不得以任何理由退換以及取消抽賞</small
+                          >
+                          <div class="pt-5">
+                            <a
+                              href="./event_detail.html"
+                              class="btn btn-primary d-inline-block w-100 border border-1 border-dark text-white fw-bold mt-auto card-btn"
+                              ><p class="mb-0">立即抽出獎賞</p></a
+                            >
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
                 <button
                   class="btn border border-1 border-dark position-relative bg-light"
                   type="button"
@@ -732,5 +784,25 @@
       integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
       crossorigin="anonymous"
     ></script>
+
+    <script>
+      const toastTrigger = document.getElementById("liveToastBtn");
+      const toastEl = document.getElementById("liveToast");
+      const backdrop = document.getElementById("toastBackdrop");
+
+      const toast = new bootstrap.Toast(toastEl, {
+        autohide: false,
+        delay: 8000,
+      });
+
+      toastTrigger.addEventListener("click", () => {
+        backdrop.classList.add("show");
+        toast.show();
+      });
+
+      toastEl.addEventListener("hidden.bs.toast", () => {
+        backdrop.classList.remove("show");
+      });
+    </script>
   </body>
 </html>
