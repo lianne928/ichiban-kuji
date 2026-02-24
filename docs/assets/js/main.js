@@ -2,28 +2,28 @@
 let carouselImgData = [
   // 帕比順順
   (eventPuppetsunsun = {
-    img: "../assets/image/eventPuppet.jpg",
+    img: "./assets/image/eventPuppet.jpg",
     title: "PUPPET SUNSUN 帕比順順",
     desc: "如果你正在找一個「陪你生活」的角色，那首選就是PUPPETSUNSUN!",
     href: "./event_detail_sunsun.html",
   }),
   // 七龍珠
   (eventBanpresto = {
-    img: "../assets/image/event_BANPRESTO.jpg",
+    img: "./assets/image/event_BANPRESTO.jpg",
     title: "七龍珠 THE CHRONICLE OFGOKU』童年悟空、大猿悟空",
     desc: "明年五月開抽！",
     href: "./event_detail_sunsun.html",
   }),
   // MOS
   (eventMos = {
-    img: "../assets/image/eventMos.jpg",
+    img: "./assets/image/eventMos.jpg",
     title: "《摩斯漢堡》第二彈開抽！",
     desc: "Last 賞 10 抽倒數中！摩斯漢堡造型的可愛時鐘，還能播放「摩斯店內音樂」",
     href: "./event_detail_sunsun.html",
   }),
   // Princess Kaguya
   (eventPrincessKaguya = {
-    img: "../assets/image/eventPrincessKaguya.jpg",
+    img: "./assets/image/eventPrincessKaguya.jpg",
     title: "超時空輝耀姬！（超かぐや姫！/ Cosmic Princess Kaguya!）",
     desc: "將於2026年1月22日於 Netflix 全球獨家播出。",
     href: "./event_detail_sunsun.html",
@@ -101,7 +101,7 @@ startCarousel();
 //     title: "TOM and JERRY FUNNY ART! 5",
 //     status: "新品登場",
 //     store: "( Happyくじ ) 快樂賞",
-//     img: "../assets/image/eventPagesMainImage.jpg",
+//     img: "./assets/image/eventPagesMainImage.jpg",
 //     href: "./event_detail.html",
 
 //     prizeStatus: {
@@ -127,7 +127,7 @@ startCarousel();
 //     title: "-test2 test-",
 //     status: "新品登場",
 //     store: "( Happyくじ ) 快樂賞",
-//     img: "../assets/image/eventPagesMainImage.jpg",
+//     img: "./assets/image/eventPagesMainImage.jpg",
 //     href: "./event_detail.html",
 
 //     prizeStatus: {
