@@ -95,82 +95,82 @@ startCarousel();
 .countPrize      (OK)     
 .totalPrize      (OK)     
 */
-let eventCardItemData = [
-  // TOM and JERRY FUNNY ART! 5
-  {
-    title: "TOM and JERRY FUNNY ART! 5",
-    status: "新品登場",
-    store: "( Happyくじ ) 快樂賞",
-    img: "../assets/image/eventPagesMainImage.jpg",
-    href: "./event_detail.html",
+// let eventCardItemData = [
+//   // TOM and JERRY FUNNY ART! 5
+//   {
+//     title: "TOM and JERRY FUNNY ART! 5",
+//     status: "新品登場",
+//     store: "( Happyくじ ) 快樂賞",
+//     img: "../assets/image/eventPagesMainImage.jpg",
+//     href: "./event_detail.html",
 
-    prizeStatus: {
-      last: {
-        lastPrize: "最後賞",
-        countPrize: "1",
-        totalPrize: "1",
-      },
-      limited: {
-        limitedPrize: "限定賞",
-        countPrize: "1",
-        totalPrize: "1",
-      },
-      sp: {
-        spPrize: "sp賞",
-        countPrize: "1",
-        totalPrize: "1",
-      },
-    },
-  },
+//     prizeStatus: {
+//       last: {
+//         lastPrize: "最後賞",
+//         countPrize: "1",
+//         totalPrize: "1",
+//       },
+//       limited: {
+//         limitedPrize: "限定賞",
+//         countPrize: "1",
+//         totalPrize: "1",
+//       },
+//       sp: {
+//         spPrize: "sp賞",
+//         countPrize: "1",
+//         totalPrize: "1",
+//       },
+//     },
+//   },
 
-  {
-    title: "-test2 test-",
-    status: "新品登場",
-    store: "( Happyくじ ) 快樂賞",
-    img: "../assets/image/eventPagesMainImage.jpg",
-    href: "./event_detail.html",
+//   {
+//     title: "-test2 test-",
+//     status: "新品登場",
+//     store: "( Happyくじ ) 快樂賞",
+//     img: "../assets/image/eventPagesMainImage.jpg",
+//     href: "./event_detail.html",
 
-    prizeStatus: {
-      last: {
-        lastPrize: "最後賞",
-        countPrize: "1",
-        totalPrize: "1",
-      },
-      limited: {
-        limitedPrize: "限定賞",
-        countPrize: "1",
-        totalPrize: "1",
-      },
-      sp: {
-        spPrize: "sp賞",
-        countPrize: "1",
-        totalPrize: "1",
-      },
-    },
-  },
-];
+//     prizeStatus: {
+//       last: {
+//         lastPrize: "最後賞",
+//         countPrize: "1",
+//         totalPrize: "1",
+//       },
+//       limited: {
+//         limitedPrize: "限定賞",
+//         countPrize: "1",
+//         totalPrize: "1",
+//       },
+//       sp: {
+//         spPrize: "sp賞",
+//         countPrize: "1",
+//         totalPrize: "1",
+//       },
+//     },
+//   },
+// ];
 
 // (02) 拉卡片 DOM
 // 抓到卡片的大殼
-let eventCard = document.getElementById("eventCard");
+// let eventCard = document.getElementById("eventCard");
 
 // 抓每一張卡片（不能用 id 因為每一張card 都要同時出現）
-let eventCardItem = document.getElementsByClassName("eventCardItem");
+// let eventCardItem = document.getElementsByClassName("eventCardItem");
 // console.log(eventCard);
 // console.log(eventCardItem.length);
 
-let firstCard = eventCardItemData[0];
+// let firstCard = eventCardItemData[0];
 // console.log(firstCard);
 // console.log(firstCard.status);
 
-let elCard = eventCardItem[0];
+// let elCard = eventCardItem[0];
 // console.log(elCard);
 
 //把卡片裡面要換的抓完
-let cardImg = elCard.getElementsByClassName("cardImg");
-let eventStatus = elCard.getElementsByClassName("eventStatus");
-let storeName = elCard.getElementsByClassName("storeName");
-let productName = elCard.getElementsByClassName("productName");
-let cardHref = elCard.getElementsByClassName("cardHref");
+// let cardImg = elCard.getElementsByClassName("cardImg");
+// let eventStatus = elCard.getElementsByClassName("eventStatus");
+// let storeName = elCard.getElementsByClassName("storeName");
+// let productName = elCard.getElementsByClassName("productName");
+// let cardHref = elCard.getElementsByClassName("cardHref");
 
 // (03) 事件 / 行為 拆分 （03-1）結果製作
