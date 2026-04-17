@@ -2,10 +2,9 @@
 @import url('https://fonts.googleapis.com/css2?family=BBH+Hegarty&family=Dela+Gothic+One&family=Mochiy+Pop+One&display=swap');
 
 // bootstrap
-@import "../../node_modules/bootstrap/scss/functions";
-@import "../../node_modules/bootstrap/scss/variables";
-@import "../../node_modules/bootstrap/scss/maps";
-
+@import "bootstrap/scss/functions";
+@import "bootstrap/scss/variables";
+@import "bootstrap/scss/maps";
 
 // 客製樣式
 @import "./configuration/custom-colors";
@@ -47,10 +46,9 @@ $utilities: map-merge(
 );
 
 
-@import "../../node_modules/bootstrap/scss/mixins";
-@import "../../node_modules/bootstrap/scss/bootstrap";
-@import "../../node_modules/bootstrap-icons/font/bootstrap-icons.css";
-
+@import "bootstrap/scss/mixins";
+@import "bootstrap/scss/bootstrap";
+@import "bootstrap-icons/font/bootstrap-icons.css";
 
 @import "./page/index";
 
